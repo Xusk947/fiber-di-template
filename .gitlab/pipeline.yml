@@ -1,0 +1,4 @@
+include:
+  - project: 'iac/flow'
+    ref: "main4-newflow"
+    file: 'gitlab/pipeline.yml'

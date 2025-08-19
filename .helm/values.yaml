@@ -1,0 +1,8 @@
+reload:
+  enabled: false
+
+ingress:
+  enabled: true
+
+healthcheck:
+  enabled: false

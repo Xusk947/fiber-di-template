@@ -1,10 +1,11 @@
 package main
 
 import (
-	"gitlab.stat4market.com/reelsmarket/fiber-di-server-template/src/bootstrap"
+	"fiber-di-server-template/internal/pkg"
+	"fiber-di-server-template/internal/server"
 	"go.uber.org/fx"
 )
 
 func main() {
-	fx.New(bootstrap.Module).Run()
+	fx.New(fx.Options(pkg.Module, server.Module)).Run()
 }

@@ -1,69 +1,51 @@
-# Binaries for programs and plugins
+# Go build artifacts
+/bin/
+/build/
+/dist/
+/tmp/
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
-
-# Test binary, built with `go test -c`
 *.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
-# Dependency directories (remove the comment below to include it)
-vendor/
+# Go modules
+/go.sum
+/vendor/
 
-# Go workspace file
-go.work
+# SQLC generated code output
+sqlc/
+**/sqlc/
+/database/sqlc/
 
-# Environment variables
-.env
-.env.local
-.env.development
-.env.test
-.env.production
+# Database migration logs, dumps
+*.db
 
-# IDE specific files
+# Fiber static files
+public/
+static/
+
+# IDE/editor files
 .idea/
 .vscode/
 *.swp
-*.swo
 *~
-.history/
-
-# JetBrains IDE specific
-*.iml
-*.iws
-*.ipr
-.idea_modules/
-*___jb_tmp___
-*___jb_old___
-*.~*
-# Go specific
-bin/
-dist/
-*.pb.go
-
-# OS specific files
-.DS_Store
-Thumbs.db
-Desktop.ini
-
-# Docker volumes
-postgres_data/
-clickhouse_data/
-minio_data/
-
-# Compiled Go binary
-main
-__debug_bin
+*.sublime-workspace
+*.sublime-project
 
 # Logs
 *.log
-logs/
 
-# Temporary files
-tmp/
-temp/
-/tmp
+# Env config
+.env
+.env.*
+!env.example  # оставить шаблон для удобства
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+coverage.out

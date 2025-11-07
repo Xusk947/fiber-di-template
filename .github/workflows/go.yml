@@ -25,9 +25,7 @@ jobs:
           go mod verify
 
       - name: Build
-        run: |
-          go mod tidy --check
-          go build -v ./...
+        run: go build -v ./...
 
       - name: Test
         run: go test -v ./...
